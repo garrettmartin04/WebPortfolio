@@ -1,30 +1,27 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import TerminalSidebar from "./components/TerminalSidebar";  // Import sidebar
+
 import TerminalSection from "./components/TerminalSection";
 import AboutPage from "./components/AboutPage";
 
-function About() {
-  return <div className="p-10">About Me Page – Fill me in!</div>;
-}
-
-function Projects() {
-  return <div className="p-10">Projects Page – Show your cool stuff here!</div>;
-}
-
-function Contact() {
-  return <div className="p-10">Contact Page – Add a form or your socials here!</div>;
-}
+import ContactPage from "./components/ContactPage"; // Make sure you import your ContactPage
 
 export default function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<TerminalSection />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <div className="flex">
+        <TerminalSidebar />  {/* Always visible */}
+        <main className="flex-1 ml-40 p-6">
+          <Routes>
+            <Route path="/" element={<TerminalSection />} />
+            <Route path="/about" element={<AboutPage />} />
+
+            <Route path="/contact" element={<ContactPage />} />
+          </Routes>
+        </main>
+      </div>
     </Router>
   );
 }
-
