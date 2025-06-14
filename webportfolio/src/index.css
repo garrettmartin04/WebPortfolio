@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body, #root {
+  background-color: #000000; /* pure black */
+  color: #00ff00; /* bright green typical terminal text */
+  font-family: 'Source Code Pro', monospace; /* optional: a nice monospace font */
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  text-shadow:
+  0 0 5px #00ff00,
+  0 0 10px #00ff00,
+  0 0 20px #00ff00;
+  
+}
+

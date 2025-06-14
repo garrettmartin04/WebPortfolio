@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import TerminalSection from "./components/TerminalSection";
 
-function App() {
+function About() {
+  return <div className="p-10">About Me Page – Fill me in!</div>;
+}
+
+function Projects() {
+  return <div className="p-10">Projects Page – Show your cool stuff here!</div>;
+}
+
+function Contact() {
+  return <div className="p-10">Contact Page – Add a form or your socials here!</div>;
+}
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<TerminalSection />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
   );
 }
 
-export default App;
