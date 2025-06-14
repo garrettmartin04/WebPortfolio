@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const fullLines = [
   { type: "cmd", text: "whoami" },
   { type: "output", text: "Garrett Martin – Software Engineering Intern, Bug Squasher, Eternal Learner" },
-   { type: "cmd", text: "cat about.txt" },
+   { type: "cmd", text: "cat bio.txt" },
   { type: "output", text: "I’m a Computer Science student at Georgia Southern University with a solid foundation in Java and Python. I’m passionate about building innovative software, learning new programming languages, and exploring AI. I enjoy collaborating and growing as a developer." },
   { type: "cmd", text: "ls" },
   { type: "links", text: ["/about", "/projects", "/contact"] },

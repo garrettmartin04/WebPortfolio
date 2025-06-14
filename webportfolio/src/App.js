@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import TerminalSection from "./components/TerminalSection";
+import AboutPage from "./components/AboutPage";
 
 function About() {
   return <div className="p-10">About Me Page – Fill me in!</div>;
@@ -19,7 +20,7 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={<TerminalSection />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={<AboutPage />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
