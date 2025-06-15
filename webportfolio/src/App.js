@@ -1,9 +1,9 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import TerminalSidebar from "./components/TerminalSidebar";  // Import sidebar
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import TerminalSidebar from "./components/TerminalSidebar";
 import TerminalSection from "./components/TerminalSection";
 import AboutPage from "./components/AboutPage";
-import ContactPage from "./components/ContactPage"; 
+import ContactPage from "./components/ContactPage";
 import ProjectPage from "./components/ProjectPage";
 
 export default function App() {
