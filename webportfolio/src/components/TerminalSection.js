@@ -12,8 +12,8 @@ const fullLines = [
 ];
 
 export default function TerminalSection() {
-  const [index, setIndex] = useState(0);
-  const [displayedLines, setDisplayedLines] = useState([]);
+  const [index, setIndex] = useState(1);
+  const [displayedLines, setDisplayedLines] = useState([fullLines[0]]);
 
   const handleClick = () => {
     if (index < fullLines.length) {
