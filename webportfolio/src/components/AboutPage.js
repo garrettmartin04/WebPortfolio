@@ -19,7 +19,9 @@ const aboutContent = [
   { type: "output", text: "Relevant Coursework: Data Structures, Algorithms, Web Development, Database Management" },
   { type: "output", text: "GPA: 3.5 | Graduation: December 2025" },
   { type: "cmd", text: "cat skills.txt" },
-  { type: "output", text: "Skills: Python, Java, React, HTML/CSS, JavaScript" },
+  { type: "output", text: "Technologies: Git; GitHub; MySQL; PostgreSQL" },
+  { type: "output", text: "Languages & Frameworks: Java; Python; HTML; CSS; React; Spring Boot; Django" },
+  { type: "output", text: "Interests: Camping; Traveling; Fishing; AI Tools; Golf" },
   {
     type: "output",
     text: (
