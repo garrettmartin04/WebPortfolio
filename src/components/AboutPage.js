@@ -42,7 +42,7 @@ export default function AboutPage() {
     { t: "cmd", text: "open links" },
     { t: "link", label: "GitHub", href: "https://github.com/garrettmartin04" },
     { t: "link", label: "LinkedIn", href: "https://linkedin.com/in/garrettmartin04" },
-    { t: "link", label: "Resume (PDF)", href: "/Brian_Martin_Resume.pdf", download: true },
+    { t: "link", label: "Resume (PDF)", href: "/WebPortfolio/Brian_Martin_Resume.pdf", download: true }
   ];
 
   return (
