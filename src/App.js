@@ -9,9 +9,9 @@ import ProjectPage from "./components/ProjectPage";
 export default function App() {
   return (
     <Router>
-      <div className="flex min-h-screen">
+      <div className="app-layout">
         <TerminalSidebar />
-        <main className="flex-1 ml-44 sm:ml-56 p-4 sm:p-6">
+        <main className="app-main">
           <Routes>
             <Route path="/" element={<TerminalSection />} />
             <Route path="/about" element={<AboutPage />} />
